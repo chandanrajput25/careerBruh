@@ -41,7 +41,7 @@ const Header = () => {
                   href="/why-birchwood-university"
                   className="px-2"
                 >
-                  Why Birchwood University
+                  Why Careerbruh
                 </Dropdown.Item>
                 <Dropdown.Item href="/our-president-message" className="px-2">
                   Our President Message
