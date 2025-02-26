@@ -1,0 +1,14 @@
+.questionModal {
+    [class~="list-group-radio"] {
+        [class~="form-check-input"] {
+            &:checked {
+                +[class~="list-group-item"] {
+                    background-color: $primary;
+                    border-color: $primary;
+                    color: $white;
+
+                }
+            }
+        }
+    }
+}

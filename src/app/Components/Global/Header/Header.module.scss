@@ -1,0 +1,18 @@
+.custom_header {
+  [class~="dropdown-toggle"] {
+    + [class~="dropdown-menu"] {
+      z-index: 1111;
+    }
+
+    border: none;
+
+    &[class~="show"] {
+      border: none;
+      background-color: #d3d3d347;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+}

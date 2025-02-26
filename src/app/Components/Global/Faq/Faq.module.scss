@@ -1,0 +1,18 @@
+.faq {
+  [class~="accordion-item"] {
+    
+    border-bottom: 1px solid $black;
+    [class~="accordion-button"] {
+      &:not(.collapsed) {
+        // background-color: $white;
+        font-weight: bold;
+        padding: 1.75rem 1rem;
+        border-radius: 0;
+        font-size: 18px;
+      }
+      &:focus {
+        box-shadow: none;
+      }
+    }
+  }
+}

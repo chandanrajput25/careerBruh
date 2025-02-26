@@ -1,0 +1,3 @@
+.pr_btn {
+  @include button-basic($primaryLight, $primary, $primaryMedium, $primary);
+}

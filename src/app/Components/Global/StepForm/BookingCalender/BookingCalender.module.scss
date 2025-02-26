@@ -1,0 +1,22 @@
+.calender_wrap {
+  [class~="go695645437"] {
+    margin: 0;
+    box-shadow: none;
+  }
+  [class~="go4247048326"] {
+    [class~="day-tile"] {
+      width: 35px;
+      height: 35px;
+      max-width: 40px;
+      abbr {
+        font-size: 12px;
+      }
+    }
+    &[class~="react-calendar"] {
+      min-height: 280px;
+    }
+  }
+  [class~="go4114704207"] {
+    font-size: 18px;
+  }
+}

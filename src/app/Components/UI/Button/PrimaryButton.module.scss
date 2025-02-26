@@ -1,0 +1,3 @@
+.pr_btn {
+  @include button-basic($primary, $white, $primaryHover,$white);
+}

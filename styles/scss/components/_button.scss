@@ -1,0 +1,43 @@
+@mixin button-basic($bgcolor, $textcolor, $bgHoverColor, $textHoverColor) {
+  font-size: 14px;
+  line-height: 24px;
+  padding: 16px 24px;
+  font-weight: 500;
+  letter-spacing: 1.25px;
+  background: $bgcolor;
+  color: $textcolor;
+  border: none;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.6em;
+  cursor: pointer;
+  z-index: 1;
+  text-transform: uppercase;
+
+  [class~="label"] {
+    position: relative;
+    top: -1px;
+  }
+  [class~="transition"] {
+    transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    transition-duration: 500ms;
+    background-color: $bgHoverColor;
+    border-radius: 9999px;
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &:hover {
+    color: $textHoverColor;
+    [class~="transition"] {
+      width: 20em;
+      height: 20em;
+    }
+  }
+  &:active {
+    transform: scale(0.97);
+  }
+}

@@ -1,0 +1,29 @@
+.date_wrapper {
+    [class~="css-4k4mmf-MuiButtonBase-root-MuiPickersDay-root"] {
+        &[class~="Mui-selected"] {
+            background-color: $primary;
+        }
+    }
+
+    [class~="css-15fu35s-MuiDialogActions-root"] {
+        button {
+            color: $primary;
+        }
+
+    }
+    [class~="css-8cn20p-MuiButtonBase-root-MuiTab-root"] {
+        &[class~="Mui-selected"] {
+            color: $primary;
+        }
+    }
+    [class~="css-umzx0k-MuiClock-pin"] {
+        background-color: $primary;
+    }
+    [class~="css-pncb2q-MuiClockPointer-root"] {
+        background-color: $primary;
+        [class~="css-f53ilk-MuiClockPointer-thumb"] {
+           border: 16px solid $primary;
+           background-color: $primary;
+        }
+    }
+}

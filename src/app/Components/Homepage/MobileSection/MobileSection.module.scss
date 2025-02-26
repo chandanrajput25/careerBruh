@@ -1,0 +1,22 @@
+.nav_wrap {
+  [class~="nav-link"] {
+    [class~="num_class"] {
+      background-color: $white;
+      min-width: 45px;
+      min-height: 45px;
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      color: $black;
+      font-size: 16px;
+    }
+    &[class~="active"] {
+      [class~="num_class"] {
+        background-color: $secondary;
+        color: $primary;
+      }
+    }
+  }
+}

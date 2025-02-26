@@ -1,0 +1,158 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("/fonts/Poppins-Regular.woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("/fonts/Poppins-Medium.woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("/fonts/Poppins-SemiBold.woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Quarto";
+  src: url("/fonts/Quarto-Bold.ttf");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+
+);
+@import "~bootstrap/scss/bootstrap";
+
+body {
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fffefa;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.main-heading,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Quarto";
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.fs-10 {
+  font-size: 10px;
+}
+.fs-12 {
+  font-size: 12px;
+}
+.fs-13 {
+  font-size: 13px;
+}
+.fs-14 {
+  font-size: 14px;
+}
+.custom-rounded {
+  border-radius: 12px;
+}
+
+.bgLight {
+  background-color: $bgLight;
+}
+.primaryLight {
+  background-color: $primaryLight;
+}
+.primaryMedium {
+  background-color: $primaryMedium;
+}
+.bg-dark {
+  background-color: $black;
+}
+.spark-green {
+  background-color: $sparkGreen;
+}
+.shadow-1 {
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.161);
+}
+.text-shadow {
+  filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
+}
+
+// Hover animations
+//line hover white
+.lhw {
+  @include linehover-basic($white);
+}
+.lhb {
+  @include linehover-basic($dark);
+}
+
+// .custom-list {
+//   list-style-type: none;
+//   margin: 0;
+//   padding: 0;
+
+//   overflow: hidden;
+//   li {
+//     padding-left: 30px;
+//     position: relative;
+//     margin-bottom: 20px;
+//     &::before {
+//       content: "";
+//       position: absolute;
+//       left: 0;
+//       top: 0px;
+//       background: url("/images/icons/arrows.png");
+//       width: 20px;
+//       height: 20px;
+//       background-size: contain;
+//     }
+//   }
+// }
+.bg_gradient {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 150, 136, 0.12),
+    rgba(226, 246, 233, 0.34)
+  );
+}
+
+.custom-list {
+  padding-left: 15px;
+  li {
+    padding-left: 10px;
+    line-height: 32px;
+    &::marker {
+      content: "✔";
+      color: $secondary;
+    }
+  }
+}
+
+
+.modal {
+  background-color: rgb(14 32 34 / 80%);
+}

@@ -1,0 +1,37 @@
+.stepForm {
+    [class~="css-3hpdci-MuiSvgIcon-root-MuiStepIcon-root"] {
+        color: $white;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: 1px solid $primary;
+
+        [class~="css-1g86afo-MuiStepIcon-text"] {
+            fill: $primary;
+        }
+
+        &[class~="Mui-active"] {
+            color: $primary;
+
+            [class~="css-1g86afo-MuiStepIcon-text"] {
+                fill: $white;
+            }
+        }
+
+        &[class~="Mui-completed"] {
+            color: $primaryMedium;
+        }
+
+    }
+
+    [class~="css-12eb3rq-MuiStepLabel-label"] {
+        font-weight: 600;
+        color: #aaa;
+
+        &[class~="Mui-active"] {
+
+            color: $primary;
+        }
+    }
+
+}

@@ -1,0 +1,17 @@
+.bgPattern {
+  &::after {
+
+    background: url('/images/background/pattern-white.svg');
+    background-position: top;
+    background-repeat: no-repeat;
+    bottom: 0;
+    content: "";
+    left: 0;
+    -webkit-mask-image: linear-gradient(0deg, transparent 45%, #000 75%);
+    mask-image: linear-gradient(0deg, transparent 55%, #000 75%);
+    opacity: 0.3;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
